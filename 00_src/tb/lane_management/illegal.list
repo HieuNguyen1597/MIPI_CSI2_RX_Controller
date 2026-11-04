@@ -1,0 +1,9 @@
+# Illegal parameter values; elaboration must stop with an error for each.
+max_lanes_0        PARA_MAX_LANES=0
+max_lanes_3        PARA_MAX_LANES=3
+max_lanes_5        PARA_MAX_LANES=5
+max_lanes_8        PARA_MAX_LANES=8
+margin_0           PARA_SKEW_DEPTH=8 PARA_FIFO_AF_MARGIN=0
+margin_eq_depth    PARA_SKEW_DEPTH=8 PARA_FIFO_AF_MARGIN=8
+margin_gt_depth    PARA_SKEW_DEPTH=4 PARA_FIFO_AF_MARGIN=6
+depth_1            PARA_SKEW_DEPTH=1 PARA_FIFO_AF_MARGIN=1
