@@ -1,6 +1,6 @@
 // Module      : m_fpt_tpg
 // Block       : B05 - Test Pattern Generator
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-10-27
 // Description : Colour-bar RAW10/RAW12 test pattern quads with sync flags and blanking
 `timescale 1ns/1ps

@@ -396,7 +396,7 @@ The FTEL guideline requires a header without defining its fields. The project he
 ```systemverilog
 // Module      : <module name>
 // Block       : <Bxx - block name in the specification>
-// Spec        : <specification document and version, e.g. FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3>
+// Spec        : <specification document and version, e.g. FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4>
 // Date        : <YYYY-MM-DD, date of the last content change>
 // Description : <one short line describing the function of the module>
 ```
@@ -473,19 +473,6 @@ the frame:
 | 29 | Tab characters in RTL files | Spaces |
 | 30 | Lint pragmas in RTL files (for example `// verilator lint_off`) | Waiver file kept separately (Section 4.13) |
 
-### 4.13 Interfaces and Lint
-
-- **Interfaces.** Data and sideband signals stay aligned to the correct cycle. Stall, valid, reset
-  and error handling follow the definition of each interface. `ready` signals, pipeline stages or
-  latency changes are not added unless the specification is changed through the agreed change
-  process, reviewed by the owners of both sides of the interface.
-- **Lint.** RTL shall be free of warnings under Verilator `--lint-only -Wall`. A waiver is used only
-  when it is justified and accepted by the reviewer. It is recorded, with its reason and reviewer, in a
-  waiver file kept next to the RTL (`<module_name>.vlt`), never inside the RTL file, and the waiver
-  file is not part of the synthesis file list.
-- **Out of scope for this revision.** DFT ports, reset control in test mode and clock-gating cells
-  with test enable will be defined once the target technology and the DFT requirements are fixed.
-
 ## 5. Signal Name Mapping
 
 This section is in the **Project** category.
@@ -523,35 +510,6 @@ conventions of Section 4 only add rules in areas the guideline leaves open:
 | Signal prefixes | `reg_` for flip-flops, `i_`/`o_`/`io_` for ports. | `w_` for combinational and internal connecting signals (Section 4.2). |
 | Constants and types | `PARA_` for parameters, `DEF_` for defines. | `LPARA_` for localparams, `_type_def` for types, `ENUM_` for enum members, three comment lines per parameter (Sections 4.2, 4.3). |
 | Block ports | `i_`/`o_` prefixes. | Prefix plus the specification name, keeping the specification reset name and polarity (for example `i_resetn`). The active-low `_n` reset rule applies at the IP wrapper (Section 3.2). |
-
-## 7. RTL Handover Checklist
-
-Before an RTL module is handed over, the following items are checked:
-
-- **Reproducibility.** The synthesis top, parameter values, file list, front-end version, options,
-  constraints and target library are recorded; the final report keeps the tool configuration and
-  logs.
-- **Elaboration and lint.** The intended configuration elaborates the intended hierarchy. Warnings
-  about width, unsigned sizing, inferred storage or latches, multiple drivers, undriven or unused
-  signals and unsupported constructs are fixed, or waived with a reason and a reviewer
-  (Section 4.13).
-- **CDC/RDC.** Every crossing uses an approved structure (Sections 4.7, 4.9). CDC/RDC analysis is
-  clean or waived once a CDC/RDC tool is available to the team.
-- **Synthesis quality.** The inferred registers, memories and logic match the architecture;
-  unresolved cells are explained; resets map to library cells.
-- **Equivalence.** RTL-to-netlist equivalence and the review of don't-care assignments (Section 4.4)
-  are performed once the target is fixed.
-- **DFT.** No latches, no combinational loops, no internal tri-state. Test-mode clock and reset
-  handling is checked once the target and the DFT requirements are fixed.
-- **Constraints.** The SDC covers every clock, I/O and timing exception of the architecture. RTL
-  synthesis is not timing sign-off; timing is claimed only with constraints and static timing
-  analysis.
-- **Source separation.** Files used only for verification are not in the synthesis file list.
-- **Deliverable content.** The RTL files in `00_src/rtl/` and the mapping files in `02_mapping/`
-  contain no tracking tags, review references, tool names or lint pragmas (Sections 4.11, 5). When
-  only comments are changed, the comment-stripped RTL before and after the change is compared to show
-  that the logic is unchanged, and the checks are run again.
-- **Mapping.** The mapping file of the module matches the current RTL (Section 5).
 
 ## Appendix A. Revision History
 

@@ -1,6 +1,6 @@
 // Module      : m_fpt_lane_management
 // Block       : B02 - Lane Management
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-10-27
 // Description : Removes lane skew, merges the lane bytes into 32-bit words and manages HS bursts.
 `timescale 1ns/1ps
