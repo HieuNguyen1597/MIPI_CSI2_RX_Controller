@@ -1,0 +1,36 @@
+# <configuration> <test> <seed>
+# test_checker_fault is not listed: it must end in FAIL and is run once by hand to confirm that
+# the monitor reports errors.
+default  test_reset_state  1
+default  test_vertical_bars  1
+default  test_horizontal_bars  1
+default  test_raw10_format  1
+default  test_cfa_orders  1
+default  test_width_truncation  1
+default  test_dimension_guard  1
+default  test_linebuf_empty_wait  1
+default  test_linebuf_empty_wait  2
+default  test_stop_at_frame_end  1
+default  test_core_enable_stop  1
+default  test_quick_reenable  1
+default  test_dual_vc_interleave  1
+default  test_per_frame_config  1
+default  test_per_frame_config  2
+default  test_per_frame_config  3
+default  test_blanking_timing  1
+default  test_backpressure  1
+default  test_backpressure  2
+default  test_backpressure  3
+default  test_soft_reset  1
+default  test_async_resetn  1
+default  test_max_dimensions  1
+default  test_random_streaming  1
+default  test_random_streaming  2
+default  test_random_streaming  3
+default  test_random_streaming  4
+default  test_random_streaming  5
+default  test_random_streaming  6
+default  test_random_streaming  7
+default  test_random_streaming  8
+default  test_random_streaming  9
+default  test_random_streaming  10

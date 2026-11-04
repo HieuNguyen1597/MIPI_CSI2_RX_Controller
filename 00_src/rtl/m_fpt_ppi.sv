@@ -1,6 +1,6 @@
 // Module      : m_fpt_ppi
 // Block       : B01 - PHY Protocol Interface (PPI)
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-10-27
 // Description : Wiring-only boundary between the D-PHY macro and the core, no storage or logic
 `timescale 1ns/1ps

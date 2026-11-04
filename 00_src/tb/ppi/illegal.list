@@ -1,0 +1,5 @@
+# Illegal parameter values; elaboration must stop with an error for each.
+max_lanes_0  PARA_MAX_LANES=0
+max_lanes_3  PARA_MAX_LANES=3
+max_lanes_5  PARA_MAX_LANES=5
+max_lanes_8  PARA_MAX_LANES=8
