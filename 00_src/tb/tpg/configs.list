@@ -1,0 +1,4 @@
+# <configuration> <parameters>; the first line is the default.
+# m_fpt_tpg has no parameter that can be overridden: every size is fixed by the specification.
+# The frame size, pattern, format and blanking are inputs and are changed inside the tests.
+default
