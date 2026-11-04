@@ -1,0 +1,4 @@
+# <configuration> <parameters>; the first line is the default.
+lanes4  PARA_MAX_LANES=4
+lanes2  PARA_MAX_LANES=2
+lanes1  PARA_MAX_LANES=1
