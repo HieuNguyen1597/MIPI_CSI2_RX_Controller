@@ -1,0 +1,8 @@
+# Illegal parameter values; elaboration must stop with an error for each.
+# PARA_SP_FIFO_DEPTH 0 and 1 are also rejected at elaboration, but before the parameter check
+# (the pointer width becomes 0), so they are not listed here.
+depth_3      PARA_SP_FIFO_DEPTH=3
+depth_12     PARA_SP_FIFO_DEPTH=12
+depth_512    PARA_SP_FIFO_DEPTH=512
+latency_2    PARA_ECC_LATENCY=2
+latency_3    PARA_ECC_LATENCY=3

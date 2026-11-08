@@ -1,0 +1,5 @@
+# <configuration> <parameters>; the first line is the default.
+# m_fpt_byte_to_pixel has no parameter that can be overridden: every width is fixed by the
+# specification. The format, Virtual Channel and line lengths are inputs and change inside the
+# tests.
+default

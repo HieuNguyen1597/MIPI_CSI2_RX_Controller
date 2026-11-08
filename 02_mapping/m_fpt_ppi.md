@@ -3,7 +3,7 @@
 ## Notes
 
 - RTL module: `m_fpt_ppi` (`00_src/rtl/m_fpt_ppi.sv`).
-- Reference: FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4, Section 6.3 (Table 6-4: PHY Protocol Interface signals) for ports; Table 5-1 (Parameter table) for `MAX_LANES`.
+- Reference: FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4.
 - The `_x` suffix in a spec name is the lane index; the RTL splits it into one signal per lane, `_0` … `_3`.
 - Spec name `-`: RTL-only name, not defined in the specs.
 

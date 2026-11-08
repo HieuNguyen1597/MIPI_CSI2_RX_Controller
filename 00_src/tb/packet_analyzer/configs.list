@@ -1,0 +1,7 @@
+# <configuration> <parameters>; the first line is the default.
+lat1_depth8     PARA_ECC_LATENCY=1 PARA_SP_FIFO_DEPTH=8
+lat0_depth8     PARA_ECC_LATENCY=0 PARA_SP_FIFO_DEPTH=8
+lat1_depth2     PARA_ECC_LATENCY=1 PARA_SP_FIFO_DEPTH=2
+lat0_depth2     PARA_ECC_LATENCY=0 PARA_SP_FIFO_DEPTH=2
+lat1_depth256   PARA_ECC_LATENCY=1 PARA_SP_FIFO_DEPTH=256
+lat0_depth256   PARA_ECC_LATENCY=0 PARA_SP_FIFO_DEPTH=256

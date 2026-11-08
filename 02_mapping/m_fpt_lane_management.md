@@ -3,7 +3,7 @@
 ## Notes
 
 - RTL module: `m_fpt_lane_management` (`00_src/rtl/m_fpt_lane_management.sv`).
-- Reference: FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4, Section 6.4: Table 6-7 (parameters), Table 6-8 (port list), Table 6-9 (Burst FSM states and outputs), Figures 6-6 to 6-8 (lane alignment and lane merging); draw.io diagram page "#2 Lane Management" (Lane Event Capture, Condition Reduce).
+- Reference: FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4.
 - The `_x` suffix in a spec name is the lane index; `(x=0)` gives the lane of a split port. In an RTL name, `[x]` is the per-lane array element (x = 0 … 3) and `gen_lane[x].gen_slice.` is the per-lane generate block.
 - Spec name `-`: RTL-only name, not defined in the specs.
 

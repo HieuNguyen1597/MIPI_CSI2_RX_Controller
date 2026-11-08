@@ -1020,11 +1020,12 @@ module tb_top;
         expect_marker($sformatf("errsotsynchs on lane %0d, form %0d", l, form), C_SYNC | full,
                       3'b111, sel & ~lane_bit(l), 4'b1111);
       end
+      // Lane l has synchronised too and holds one byte.
       plan_clean(n, 8 * n, 0, 0, 0, 0, 0);
       p_err_at[l] = p_sync[l];
       run_burst();
-      expect_marker($sformatf("errsotsynchs with rxsynchs on lane %0d", l), C_SYNC | full, 3'b111,
-                    sel, 4'b1111);
+      expect_marker($sformatf("errsotsynchs with rxsynchs on lane %0d", l),
+                    C_SYNC | ((THR <= 1) ? C_FULL : C_NONE), 3'b111, sel, 4'b1111);
       plan_clean(n, 16 * n, 0, 0, 0, 0, 0);
       p_err_at[l] = p_first[l] + 6;
       run_burst();
@@ -1561,7 +1562,9 @@ module tb_top;
       word_cyc.delete();
       run_burst();
       expect_data($sformatf("lanes=%0d continuous stream", n));
-      if (word_cyc.size() != 16) begin
+      if (m_drop_count != s_drops) begin
+        // Bytes dropped on a full FIFO (small SKEW_DEPTH): the word count is not that of the payload.
+      end else if (word_cyc.size() != 16) begin
         fail($sformatf("lanes=%0d: %0d words for 64 bytes", n, word_cyc.size()));
       end else begin
         for (int w = 1; w < 15; w++)
@@ -1612,7 +1615,11 @@ module tb_top;
         end
         default: ;
       endcase
-      if (p_payload.size() == 0 && kind <= 4) exact = 1'b0;
+      // An empty payload gives no word (and with trailers maybe none either): no data expected.
+      if (p_payload.size() == 0) begin
+        exact  = 1'b0;
+        prefix = 1'b0;
+      end
       if (nd < 4 && $urandom_range(0, 2) == 0) begin
         for (int k = nd; k < 4; k++) begin
           p_kind[k] = LK_NOISE;  p_act[k] = 0;  p_len[k] = 40 + p_payload.size();
