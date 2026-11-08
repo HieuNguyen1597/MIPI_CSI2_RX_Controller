@@ -3,7 +3,7 @@
 ## Notes
 
 - RTL module: `m_fpt_tpg` (`00_src/rtl/m_fpt_tpg.sv`).
-- Reference: FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4, Section 6.7: Table 6-23 (parameters), Table 6-24 (interfaces), Table 6-26 (Control FSM state outputs), Figures 6-18 to 6-22; draw.io diagram page "#5 TPG".
+- Reference: FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4.
 - In an RTL name, `[k]` is the band threshold index (k = 1 … 7) and `[n]` is the pixel index within one cycle (n = 0 … 3); the spec names use the `_k` / `_n` suffix.
 - Spec name `-`: RTL-only name, not defined in the specs.
 
