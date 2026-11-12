@@ -1,0 +1,36 @@
+# <configuration> <test> <seed>
+# test_checker_fault is not listed: it must end in FAIL and is run once by hand to confirm that
+# the checkers report errors.
+default  test_reset_values  1
+default  test_async_resetn  1
+default  test_soft_reset  1
+default  test_raw12_aligned  1
+default  test_raw10_aligned  1
+default  test_raw12_partial_last_beat  1
+default  test_raw10_partial_last_beat  1
+default  test_misaligned_whole_units  1
+default  test_misaligned_pad_unit  1
+default  test_eol_without_payload  1
+default  test_idle_gaps  1
+default  test_idle_gaps  2
+default  test_idle_gaps  3
+default  test_single_beat_lines  1
+default  test_line_start_safety_net  1
+default  test_first_beat_remainder  1
+default  test_sync_pending  1
+default  test_vc_dt_passthrough  1
+default  test_back_to_back_lines  1
+default  test_idle_inputs_ignored  1
+default  test_idle_inputs_ignored  2
+default  test_sensor_line_lengths  1
+default  test_missing_sol_after_eol  1
+default  test_random_traffic  1
+default  test_random_traffic  2
+default  test_random_traffic  3
+default  test_random_traffic  4
+default  test_random_traffic  5
+default  test_random_traffic  6
+default  test_random_traffic  7
+default  test_random_traffic  8
+default  test_random_traffic  9
+default  test_random_traffic  10
