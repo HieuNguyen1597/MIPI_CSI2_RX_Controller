@@ -1,0 +1,12 @@
+# Illegal parameter values; elaboration must stop with an error for each.
+# PARA_LINE_BUFFER_DEPTH 0 and 1 are also rejected at elaboration, but before the parameter check
+# (the pointer width becomes 0), so they are not listed here.
+depth_2               PARA_LINE_BUFFER_DEPTH=2     PARA_FULL_WATERMARK=1
+depth_3               PARA_LINE_BUFFER_DEPTH=3     PARA_FULL_WATERMARK=2
+depth_6               PARA_LINE_BUFFER_DEPTH=6     PARA_FULL_WATERMARK=4
+depth_12              PARA_LINE_BUFFER_DEPTH=12    PARA_FULL_WATERMARK=8
+depth_65536           PARA_LINE_BUFFER_DEPTH=65536 PARA_FULL_WATERMARK=1740
+wm_0                  PARA_LINE_BUFFER_DEPTH=16    PARA_FULL_WATERMARK=0
+wm_eq_depth           PARA_LINE_BUFFER_DEPTH=16    PARA_FULL_WATERMARK=16
+wm_gt_depth           PARA_LINE_BUFFER_DEPTH=16    PARA_FULL_WATERMARK=17
+wm_default_gt_depth   PARA_LINE_BUFFER_DEPTH=1024
