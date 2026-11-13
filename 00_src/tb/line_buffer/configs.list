@@ -1,0 +1,5 @@
+# <configuration> <parameters>; the first line is the default.
+default       PARA_LINE_BUFFER_DEPTH=2048 PARA_FULL_WATERMARK=1740
+depth16_wm12  PARA_LINE_BUFFER_DEPTH=16   PARA_FULL_WATERMARK=12
+depth4_wm3    PARA_LINE_BUFFER_DEPTH=4    PARA_FULL_WATERMARK=3
+depth4_wm1    PARA_LINE_BUFFER_DEPTH=4    PARA_FULL_WATERMARK=1
