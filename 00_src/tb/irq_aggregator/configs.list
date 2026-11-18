@@ -1,0 +1,14 @@
+# name parameter overrides; CLK_CASE only selects testbench clocks
+lanes4_sync2_tail256_r1
+lanes4_sync2_tail256_r4 CLK_CASE=4
+lanes4_sync2_tail256_r22 CLK_CASE=22
+lanes4_sync2_tail256_rf CLK_CASE=0
+lanes1_sync2_tail64_r1 PARA_MAX_LANES=1 PARA_RST_TAIL=64
+lanes1_sync2_tail64_r4 PARA_MAX_LANES=1 PARA_RST_TAIL=64 CLK_CASE=4
+lanes2_sync3_tail128_r1 PARA_MAX_LANES=2 PARA_SYNC_STAGES=3 PARA_RST_TAIL=128
+lanes2_sync3_tail128_r4 PARA_MAX_LANES=2 PARA_SYNC_STAGES=3 PARA_RST_TAIL=128 CLK_CASE=4
+lanes1_sync2_tail100_r1 PARA_MAX_LANES=1 PARA_RST_TAIL=100
+lanes1_sync2_tail100_r4 PARA_MAX_LANES=1 PARA_RST_TAIL=100 CLK_CASE=4
+lanes1_sync2_tail9_elab PARA_MAX_LANES=1 PARA_RST_TAIL=9
+lanes2_sync3_tail11_elab PARA_MAX_LANES=2 PARA_SYNC_STAGES=3 PARA_RST_TAIL=11
+lanes4_sync3_tail65535_elab PARA_SYNC_STAGES=3 PARA_RST_TAIL=65535
