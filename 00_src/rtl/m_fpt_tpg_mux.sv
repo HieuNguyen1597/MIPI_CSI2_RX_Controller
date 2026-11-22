@@ -1,6 +1,6 @@
 // Module      : m_fpt_tpg_mux
 // Block       : B06 - TPG Mux
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-10-27
 // Description : Frame-safe 2:1 source select between the RX pixel path and the TPG
 `timescale 1ns/1ps

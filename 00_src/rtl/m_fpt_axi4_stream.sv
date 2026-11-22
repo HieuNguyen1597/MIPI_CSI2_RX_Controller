@@ -1,6 +1,6 @@
 // Module      : m_fpt_axi4_stream
 // Block       : B12 - AXI4-Stream Master
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-11-15
 // Description : AXI4-Stream output to the ISP with skid buffer, frame gate and abort sequencer
 `timescale 1ns/1ps

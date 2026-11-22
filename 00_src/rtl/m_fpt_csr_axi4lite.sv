@@ -1,6 +1,6 @@
 // Module      : m_fpt_csr_axi4lite
 // Block       : B14 - CSR & AXI4-Lite Subordinate
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-11-15
 // Description : AXI4-Lite register map, control and status crossings, D-PHY enables and reset.
 `timescale 1ns/1ps

@@ -1,6 +1,6 @@
 // Module      : m_fpt_irq_aggregator
 // Block       : B11 - Interrupt & Error Aggregator
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-11-15
 // Description : IRQ_STATUS flags, csi2_irq, event counters, sticky overflow flags and ERROR_CAPTURE
 `timescale 1ns/1ps
