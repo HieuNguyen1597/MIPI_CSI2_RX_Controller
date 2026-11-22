@@ -1,0 +1,42 @@
+# <configuration> <test> <seed>
+# Directed tests run once; test_random_traffic (200000 cycles) runs with seeds 1-10.
+# test_checker_fault is not listed: it must end in FAIL and is run once by hand to confirm that
+# the checker reports errors.
+default  test_reset_values               1
+default  test_soft_reset                 1
+default  test_packet_causes              1
+default  test_packet_cause_no_capture    1
+default  test_midline_causes             1
+default  test_cause_qualifiers           1
+default  test_core_enable                1
+default  test_dma_drop_follow            1
+default  test_dma_drop_no_follow         1
+default  test_abort_and_skip             1
+default  test_causes_outside_run         1
+default  test_hold_and_flush             1
+default  test_skip_exit                  1
+default  test_discard_flags              1
+default  test_axis_enable_fall           1
+default  test_abort_mask                 1
+default  test_capture_watch              1
+default  test_drop_report                1
+default  test_error_on_overlap           1
+default  test_tpg_selected               1
+default  test_frame_never_closed         1
+default  test_two_ends_same_cycle        1
+default  test_dma_drop_without_capture   1
+default  test_vc2_vc3_frame_start        1
+default  test_core_enable_one_cycle      1
+default  test_active_sel_in_drop         1
+default  test_linebuffer_full            1
+default  test_first_cycle_events         1
+default  test_random_traffic             1
+default  test_random_traffic             2
+default  test_random_traffic             3
+default  test_random_traffic             4
+default  test_random_traffic             5
+default  test_random_traffic             6
+default  test_random_traffic             7
+default  test_random_traffic             8
+default  test_random_traffic             9
+default  test_random_traffic             10

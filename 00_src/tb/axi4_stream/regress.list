@@ -1,0 +1,35 @@
+# <configuration> <test> <seed>
+# test_checker_fault is not listed: it must end in FAIL and is run once by hand to confirm that
+# the monitor reports errors.
+default  test_reset_and_idle           1
+default  test_passthrough_full_rate    1
+default  test_random_backpressure      1
+default  test_random_backpressure      2
+default  test_random_backpressure      3
+default  test_random_backpressure      4
+default  test_stall_patterns           1
+default  test_axis_enable_gating       1
+default  test_abort_sequences          1
+default  test_abort_under_backpressure 1
+default  test_abort_under_backpressure 2
+default  test_abort_under_backpressure 3
+default  test_abort_under_backpressure 4
+default  test_abort_on_take_cycle      1
+default  test_abort_reassertion        1
+default  test_frame_gate_after_abort   1
+default  test_frame_skip               1
+default  test_frame_skip               2
+default  test_frame_skip               3
+default  test_frame_skip               4
+default  test_single_channel_tpg_mode  1
+default  test_vc_exposure_swap         1
+default  test_soft_reset               1
+default  test_async_resetn             1
+default  test_upstream_flush           1
+default  test_random_streaming         1
+default  test_random_streaming         2
+default  test_random_streaming         3
+default  test_random_streaming         4
+default  test_abort_mask_robustness    1
+default  test_vc_and_skip_robustness   1
+default  test_disable_without_abort    1

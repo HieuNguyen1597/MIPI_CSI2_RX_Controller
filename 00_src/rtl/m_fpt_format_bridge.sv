@@ -1,6 +1,6 @@
 // Module      : m_fpt_format_bridge
 // Block       : B08 - Format Bridge
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-11-07
 // Description : Bypass and RAW16 formatters, stream and DMA output FIFOs with fb_ready handshake
 `timescale 1ns/1ps

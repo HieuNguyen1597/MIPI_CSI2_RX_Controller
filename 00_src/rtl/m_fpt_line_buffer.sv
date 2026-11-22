@@ -1,6 +1,6 @@
 // Module      : m_fpt_line_buffer
 // Block       : B07 - Line Buffer
-// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.3
+// Spec        : FTEL_IP_MIPI_CSI-2_CONTROLLER_MAS_v1.4
 // Date        : 2026-11-06
 // Description : Single-clock pixel FIFO with a two-entry first-word-fall-through read stage
 `timescale 1ns/1ps

@@ -1,0 +1,13 @@
+# <label> <parameters>; other parameters keep their default. Each set is outside the legal
+# range and must stop elaboration.
+max_lanes_0            PARA_MAX_LANES=0
+max_lanes_3            PARA_MAX_LANES=3
+max_lanes_5            PARA_MAX_LANES=5
+n_extract_3            PARA_N_EXTRACT=3
+max_outstanding_0      PARA_MAX_OUTSTANDING=0
+max_outstanding_128    PARA_MAX_OUTSTANDING=128
+sync_stages_1          PARA_SYNC_STAGES=1
+phy_rst_cycles_0       PARA_PHY_RST_CYCLES=0
+phy_rst_cycles_65536   PARA_PHY_RST_CYCLES=65536
+irq_clr_timeout_0      PARA_IRQ_CLR_TIMEOUT=0
+irq_clr_timeout_65536  PARA_IRQ_CLR_TIMEOUT=65536

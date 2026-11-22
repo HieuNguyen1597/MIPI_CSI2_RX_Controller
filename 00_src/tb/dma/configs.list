@@ -1,0 +1,15 @@
+# <configuration> <PARAMETER=value> ...; the first line is the default configuration.
+# default: every parameter at its default (64-bit AXI, two clocks).
+default
+# One clock for both domains.
+sync             PARA_ASYNC_MM_CLK=0
+# 32-bit AXI data bus: two W beats per 64-bit beat.
+axi32            PARA_AXI_DATA_WIDTH=32
+# Smallest FIFOs, bursts and outstanding count, three synchroniser stages.
+min_burst8_out2  PARA_MAX_BURST_BEATS=8 PARA_MAX_OUTSTANDING=2 PARA_RAW_FIFO_DEPTH=16 PARA_META_DATA_FIFO_DEPTH=8 PARA_CMD_FIFO_DEPTH=2 PARA_META_MAX_BURST_BEATS=4 PARA_SYNC_STAGES=3
+# Wider AXI identifier: upper bits driven 0.
+id4              PARA_AXI_ID_WIDTH=4
+# Largest values.
+max_id8_out64    PARA_AXI_ID_WIDTH=8 PARA_MAX_OUTSTANDING=64 PARA_RAW_FIFO_DEPTH=1024 PARA_META_DATA_FIFO_DEPTH=512 PARA_CMD_FIFO_DEPTH=64 PARA_META_MAX_BURST_BEATS=256 PARA_SYNC_STAGES=4
+# Burst limits that are not powers of two.
+burst100_meta5   PARA_MAX_BURST_BEATS=100 PARA_META_MAX_BURST_BEATS=5
