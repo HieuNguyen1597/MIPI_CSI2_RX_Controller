@@ -1,2 +1,7 @@
-# Illegal parameter values; elaboration must stop with an error for each.
-# m_fpt_axi4_stream has no parameter, so there is no illegal parameter set.
+# <label> <PARAMETER=value> ...: each set is outside the legal range; elaboration must stop.
+sync_stages_1    PARA_SYNC_STAGES=1
+depth_1          PARA_AXIS_FIFO_DEPTH=1
+depth_2          PARA_AXIS_FIFO_DEPTH=2
+depth_3          PARA_AXIS_FIFO_DEPTH=3
+depth_6          PARA_AXIS_FIFO_DEPTH=6
+depth_2048       PARA_AXIS_FIFO_DEPTH=2048

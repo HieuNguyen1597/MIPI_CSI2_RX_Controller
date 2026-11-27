@@ -1,4 +1,9 @@
-# <configuration> <parameters>; the first line is the default.
-# m_fpt_axi4_stream has no parameter that can be overridden: every width and the skid depth are
-# fixed by the specification.
+# <configuration> <PARAMETER=value> ...; the first line is the default configuration.
+# default: SYNC_STAGES 2, AXIS_FIFO_DEPTH 16.
 default
+# Smallest stream FIFO.
+sync2_depth4     PARA_AXIS_FIFO_DEPTH=4
+# Largest stream FIFO, three synchroniser stages.
+sync3_depth1024  PARA_SYNC_STAGES=3 PARA_AXIS_FIFO_DEPTH=1024
+# Four synchroniser stages with a small stream FIFO.
+sync4_depth8     PARA_SYNC_STAGES=4 PARA_AXIS_FIFO_DEPTH=8
